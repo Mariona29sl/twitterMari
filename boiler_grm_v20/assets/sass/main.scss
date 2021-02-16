@@ -1,0 +1,130 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+@import 'partials/modal';
+@import 'partials/buttons';
+@import 'partials/menu';
+@import 'partials/tweet';
+@import 'partials/grupoDerech';
+
+/* {
+  border: 1px solid tomato;
+}*/
+
+html,
+body{
+  width: 100%;
+  background-color: rgb(23, 24, 31);
+  color: white;
+//max-width:$web_width ;
+  position: relative;
+}
+
+main{
+  width: 75%;
+  display: flex;
+  margin: auto;
+
+}
+
+.general{
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns:  25% 50% 25%;
+
+  .grupo_izq{
+    grid-area: 1 / 1 / span 1 / span 1;
+    .logo_twitter{
+      margin-top: 1rem;
+      .fa{
+      font-size: 2rem;
+      }
+    }
+  }
+  .grupo_centro{
+    min-height: 100vh;
+    //border: solid 1px rgb(73, 47, 189);
+    border-bottom: none;
+    grid-area: 1 / 2 / span 1 / span 1;
+    border: solid 1px white;
+    .home{
+
+
+      h3{
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+
+    }
+    .new_form{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: solid 1px rgb(255, 255, 255);
+    }
+    
+
+  }
+  .grupo_derech{
+    grid-area: 1 / 3 / span 1 / span 1;
+  
+  
+  }
+}
+
+//repetidos
+/*.photo_tw{
+  background-color: brown;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 180px;
+  margin: 0.6rem;
+  margin-top: 0;
+
+}*/
+
+.tweet_body_write{
+  display: flex;
+
+  textarea{
+    width: 60%;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    padding-top:0.8rem ;
+    resize: none;
+  }
+}
+
+
+
+
+
+
+
+//imagen
+.photo_tw{
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 180px;
+  margin: 0.6rem;
+  margin-top: 0;
+  @include full_image;
+
+  .imagenUser{
+    border-radius: 180px;
+  }
+}
+
+
+
+a{
+  color: white;
+}
+

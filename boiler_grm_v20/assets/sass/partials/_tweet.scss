@@ -1,0 +1,76 @@
+
+//twett hecho
+
+.tw_escritos{
+    padding-bottom: 1rem;
+  
+    .twIndividual{
+      .grupoTexto{
+        border-bottom: solid 1px rgb(255, 255, 255);
+        border-top: none;
+  
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .photo_tw{
+  
+          width: 3rem;
+          height: 3rem;
+          border-radius: 180px;
+          margin: 0.6rem;
+          margin-top: 0;
+          @include full_image;
+  
+          .imagenUser{
+            border-radius: 180px;
+          }
+        }
+      }
+    }
+  
+}
+
+
+
+
+
+.texto_tw{
+    //información del tw
+    .info_usuario{
+  
+      display: flex;
+      margin-bottom: 1rem;
+      .item_usuario{
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+        .nombre{
+          font-weight: bold;
+        }
+        p{
+          margin-bottom: 0;
+        }
+        .circle{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+
+
+  .interaciones_tw{
+    display: flex;
+  
+    .items_interacciones{
+      color: $iconos;
+      span{
+        margin-right: 0.2rem;
+  
+      }
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  
+  }
+

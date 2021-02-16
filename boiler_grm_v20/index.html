@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Boiler</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="./assets/css/main.css.map" />
+</head>
+
+<body>
+
+    <main>
+        <div class="general">
+
+            <div class="grupo_izq">
+                <div class="logo_twitter">
+                    <div class="items_interacciones" >
+                        <span class="fa fa-twitter"></span>
+                    </div>
+                </div>
+                <div class=" create_tweets btn">
+
+                    <a href="#" class="btn">
+                        <span class="label">Create tweet</span>
+                        <span class="fa fa-plus"></span>
+                    </a>
+                </div>
+               
+                <div class="menu_dinamico">
+                    <!-- <div class="item_menu">
+                        <span class="fa fa-home"></span>
+                        <span class="label">Home</span>
+
+
+                    </div>
+                    <div class="item_menu">
+                        <span class="fa fa-bell-o"></span>
+                        <span class="label">Notificaciones</span>
+
+
+                    </div>
+                    <div class="item_menu">
+                        <span class="fa fa-hashtag"></span>
+                        <span class="label">Explore</span>
+
+
+                    </div>
+                    <div class="item_menu">
+                        <span class="fa fa-user"></span>
+                        <span class="label">Perfil</span>
+
+
+                    </div>
+                    <div class="item_menu">
+                        <span class="fa fa-bookmark"></span>
+                        <span class="label">Bookmarks</span>
+
+
+                    </div>-->
+                </div>
+
+            </div>
+
+            <div class="grupo_centro">
+                <div class="home">
+                    <h3>Home</h3>
+                </div>
+                <form class="new_form" name="new">
+                    <div class="tweet">
+                        <div class="tweet_body_write">
+                            <div class="photo_tw">
+                                <img class="imagenUser" src="https://pbs.twimg.com/media/Er30pstXIAEbmDy?format=jpg&name=small" alt="">
+                            </div>
+                            <textarea placeholder="Tweet algo..." name="tweet"></textarea>
+                        </div>
+                        <div class="tweet_footer">
+                            <button type="submit" class="btn">Tweet</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="tw_escritos">
+                    <!----->
+                    <div class="twIndividual">
+
+                        <!---
+                        <div class="grupoTexto">
+                            <div class="photo_tw">
+                                <img src="" alt="">
+                            </div>
+                            <div class="texto_tw">
+                                <div class="info_usuario">
+                                    <div class="nombre_usuario item_usuario">
+                                       <p class="nombre"> mariona</p>
+                                    </div>
+                                    <div class="nomnre_cuenta item_usuario">
+                                        @mariona29sl
+                                    </div>
+                                    <div class="circle item_usuario">
+                                       <p> ·</p>
+                                    </div>
+                                    <div class="timepo_publicacion item_usuario">
+                                        <p class=""> ${}</p>
+                                    </div>
+                                </div>
+                                <div class="cuerpo_tw">
+                                    <p>${}</p>
+                                </div>
+                                <div class="interaciones_tw">
+                                    <a class="items_interacciones" href="#">
+                                        <span class="fa fa-comment-o"></span>
+                                        <div class=" label">
+                                            ${}
+                                        </div>
+                                    </a>
+                                    <a class="items_interacciones" href="#">
+                                        <span class="fa fa-retweet"></span>
+                                        <div class=" label">
+                                            ${}
+                                        </div>
+                                    </a>
+                                    <a class="items_interacciones" href="#">
+                                        <span class="fa fa-heart-o"></span>
+                                        <div class=" label">
+                                            ${}
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>--->
+
+                    </div>
+                </div>
+            </div>
+            <div class="grupo_derech">
+                <span class="amount"></span>
+                <span class="amountReset">BORRAR TODOS</span>
+            </div>
+
+             <div class="modal_tweet">
+                <div class="modal_overlay"></div>
+                <div class="modal_holder">
+                    <div class="modal_header">
+                        <div class="close_buttom">
+                            <span class="fa fa-close"></span>
+                        </div>
+                    </div>
+                    <div class="modal_body">
+                        <form class="new_form" name="new_modal">
+                            <div class="tweet">
+                                <div class="tweet_body_write">
+                                    <div class="photo_tw">
+                                        <img class="imagenUser" src="https://pbs.twimg.com/media/Er30pstXIAEbmDy?format=jpg&name=small" alt="">
+                                    </div>
+                                    <textarea placeholder="Tweet algo..." name="tweet"></textarea>
+                                </div>
+                                <div class="tweet_footer">
+                                    <button type="submit" class="btn">Tweet</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./app/data.js"></script>
+    <script src="./app/main.js"></script>
+</body>
+
+</html>

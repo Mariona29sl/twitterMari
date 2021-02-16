@@ -1,0 +1,19 @@
+.grupo_derech{
+    margin: 1rem;
+    display: grid;
+    height: 20%;
+    .amount{
+      @include button2;
+      font-weight: lighter;
+      margin: auto;
+      margin-bottom: 0.3rem;
+      padding: 0.5rem;
+    }
+    .amountReset{
+      @include button2;
+      margin: auto;
+      padding: 0.5rem;
+  
+  
+    }
+  }
